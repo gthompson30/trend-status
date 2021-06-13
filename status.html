@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/style.css">
+
+</style>
+
+</head>
+
+<body>
+	<br><br><br><br>
+	
+	<div class="main">
+		<div class="column" style="width: 8vw;"></div>
+
+		<div class="column" id="graph" style="background-color: lightblue; width: 23vw;">
+			<center>
+				<p> <b> Historical Popularity of {name} </b> </p>
+				<hr style="border: 2px solid rgb(120, 120, 255);">
+				<br>
+				<a href="figure.png">
+					<img src="figure.png" style="width: 20vw;"></img>
+				</a>
+			</center>
+		</div>
+	
+		<div class="column" style="width: 2vw;"></div>
+	
+		<div class="column" id="status" style="background-color: rgb(134, 197, 203); width: 34vw;">
+			<center>
+				<br><br>
+				<h2> Status of {name} </h2>
+				<hr style="border: 2px solid rgb(120, 120, 255);">
+				<h1 id="status_description" style="color: {color};"> <b> {health_desc} </b> </h1>
+				<br><br>
+
+				<h3 id="health_title"> Health of {name}: </h3>
+			</center>
+			
+			<div class="container">
+				<div class="health" style="width: {health}%;"> <p style="text-align: center; color: lightblue;"> {health}% </p> </div>
+			</div>
+
+			<center>
+				<br><br>
+				<h3> <a href="index.html"> Back to home page </a> </h3>
+				<br><br>
+			</center>
+		</div>
+		
+		<div class="column" style="width: 2vw;"></div>
+		
+		<div class="column" id="most_popular" style="background-color: lightblue; width: 23vw">
+			<table width="100%">
+				<tr>
+					<th colspan="2">
+						<p style="font-size: 18px;"> <b> Current Trends </b> </p>
+					</th>
+				</tr>
+				<div id="trnds">
+                                        <tr class="a_column">
+						<td> <p class="rank"> 1. </p> </td>
+						<td>
+							<p class="trend"> {popular[0]} </p>
+						</td>
+					</tr>
+                                        <tr class="b_column">
+                                                <td> <p class="rank"> 2. </p> </td>
+                                                <td>
+                                                        <p class="trend"> {popular[1]} </p>
+						</td>
+					</tr>
+                                        <tr>
+                                                <td> <p class="rank"> 3. </p> </td>
+                                                <td>
+                                                        <p class="trend"> {popular[2]} </p>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td> <p class="rank"> 4. </p> </td>
+                                                <td>
+                                                        <p class="trend"> {popular[3]} </p>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td> <p class="rank"> 5. </p> </td>
+                                                <td>
+                                                        <p class="trend"> {popular[4]} </p>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td> <p class="rank"> 6. </p> </td>
+                                                <td>
+                                                        <p class="trend"> {popular[5]} </p>
+                                                </td>
+                                	</tr>
+                                        <tr>
+                                                <td> <p class="rank"> 7. </p> </td>
+						<td>
+                                                        <p class="trend"> {popular[6]} </p>
+                                                </td>
+                                	</tr>
+                                        <tr>
+                                                <td> <p class="rank"> 8. </p> </td>
+                                                <td>
+                                                        <p class="trend"> {popular[7]} </p>
+                                                </td>
+                                	</tr>
+                                        <tr>
+                                                <td> <p class="rank"> 9. </p> </td>
+                                                <td>
+                                                        <p class="trend"> {popular[8]} </p>
+                                                </td>
+                                	</tr>
+                                	<tr>
+                                                <td> <p class="rank"> 10. </p> </td>
+                                                <td>
+                                                        <p class="trend"> {popular[9]} </p>
+                                                </td>
+                                	</tr>
+				</div>
+			</table>
+		</div>
+
+		<div class="column" style="width: 8vw;"></div>
+	</div>
+
+	<div id="bottom">
+                <p style="position: absolute; bottom: -1vw; right: 0vw;">
+                        <a href="pages/about.html" style="color: black;">about</a>
+			|
+                        <a href="pages/code.html" style="color: black;">code</a>
+			|
+                        <a href="pages/devlog.html" style="color: black;">devlog</a>
+			|
+                        <a href="pages/sources.html" style="color: black;">sources</a>
+                </p>
+        </div>
+
+</body>
+
+</html>
