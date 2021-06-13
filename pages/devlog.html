@@ -1,0 +1,364 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5bf813fa9f.js" crossorigin="anonymous"></script>
+
+<style>
+
+h1, h2 {
+	text-align: center;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+body {
+	background-image: url('https://blog.motionisland.com/wp-content/uploads/2019/09/After-Effects-Arrow-23.gif');
+}
+
+#main {
+	width: 45vw;
+	border: 5px solid rgb(255, 0, 0, 0.8);
+	border-radius: 30px;
+	background-color: rgb(0, 0, 255, 0.6);
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+#search_box {
+}
+
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+button {
+	width: 34px;
+	height: 34px;
+	padding-top: 3px;
+}
+
+#credits {
+	width: 20vw;
+}
+
+#our_names {
+	padding-top: 20px;
+	font-size: 16px;
+}
+
+#bottom {
+	background-color: lightblue;
+}
+
+.gitlink {
+	color: white;
+}
+
+p, td {
+	color: white;
+	text-align: left;
+	font-family: 'Inconsolata', monospace;
+}
+
+th {
+	text-align: center;
+        font-family: 'Inconsolata', monospace;
+	color: white;
+}
+
+a {
+	color: white;
+}
+
+.numbers {
+	text-align: center;
+}
+
+h3, h4 {
+	font-family: 'Inconsolata', sans-serif;
+	color: white;
+	text-align: left;
+
+}
+
+ul {
+	list-style-type: circle;
+	list-style-position: outside;
+	color: white;
+}
+
+.indented {
+	padding-left: 30px;
+}
+
+</style>
+
+</head>
+
+<body>
+	<br><br><br><br><br><br>
+	<center>
+		<div id="main">
+			<h1> Development Log </h1>
+			<hr>
+			<p>
+				Team Georgia Armenia Mauritania :: Gabriel Thompson, Maggie Huang, Anthony Chen <br>
+				IntroCS pd06 sec10 <br>
+				FINAL PROJECT -- TrendStatus : Is it Dead Yet? <br>
+				SPRING 2021 <br>
+				time cost: 8.8 hrs <br>
+				collaborated with: N/A <br>
+				consulted: QAF-Drops (Kevin Wang) <br>				
+			</p>
+			<br>
+			<h3> Project Description: </h3>
+			<p>
+				TrendStatus uses Google Trends Data to analyze trend data of a random topic and assign it a medical status, for example:
+				terminally ill, alive and well, hospitalized, six feet under, etc. The website allows you to search up a topic and gives
+				you the medical status of that topic.
+			</p>
+			<p>
+				==============================================================<br>
+				&nbsp;____&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				 |&nbsp;&nbsp;_ \&nbsp;&nbsp;_____&nbsp;&nbsp; _____| | ___&nbsp;&nbsp;_ __&nbsp;&nbsp;_ __ ___&nbsp;&nbsp; ___ _ __ | |_&nbsp;&nbsp;<br>
+				 | | | |/ _ \ \ / / _ \ |/ _ \| '_ \| '_ ` _ \ / _ \ '_ \| __| <br>
+				 | |_| |&nbsp;&nbsp;__/\ V /&nbsp;&nbsp;__/ | (_) | |_) | | | | | |&nbsp;&nbsp;__/ | | | |_&nbsp;&nbsp;<br>
+				 |____/ \___| \_/ \___|_|\___/| .__/|_| |_| |_|\___|_| |_|\__| <br>
+				 | |&nbsp;&nbsp;&nbsp;&nbsp;___&nbsp;&nbsp; __ _&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				 | |&nbsp;&nbsp; / _ \ / _` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				 | |__| (_) | (_| |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				 |_____\___/ \__, |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |___/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+				==============================================================
+
+			</p>
+			<h3> OBSTACLES OVERCOME </h3>
+			<ul>
+				<li><p>At first, we tried to scrape Google Trends data from the requests module.  We were unable to get requests working, because the filename was "requests.py", and this caused a "circular import" error, as the Python file was trying to import itself.</p></li>
+				<ul>
+					<li><p>This was eventually resolved naming the Python file something other than "requests", although we ended up using a dedicated module, instead of requests</p></li>
+				</ul>
+				<li><p>After trying and failing to use requests to scrape Google Trends data, we tried using multiple different Python modules, many of which were unusable because they spit out cryptic error messages we were unable to understand, required a Google account, or were otherwise confusing.</p></li>
+				<ul>
+					<li><p>We eventually found the Python library, pytrends, which allowed us to easily retrieve Google Trends data, with no cryptic error messages, and no requirement to sign up for a Google account.</p></li>
+				</ul>
+				<li><p>After we were able to load in data from Google Trends, we were initially unsure how to scrape the data for historical popularity, because the Google Trends data that pytrends retrieved was a variable type that was custom to the module.</p></li>
+				<ul>
+					<li><p>We eventually found that we could take the retrieved data, take the index of the trend we wanted to look at, and convert this to a list. The resulting list containing the raw data of the historical popularity, which we could analyze to calculate the appropriate medical condition</p></li>
+				</ul>
+				<li><p>We were initially unsure of how to analyze the popularity data and calculate a "positivity" or "negativity" to the data. We at first thought that we could compare the current data to the highest point, and make the score based off of that.</p></li>
+				<ul>
+					<li><p>We went through multiple different ideas for calculating the positivity of the graph, but eventually decided to make a list containing the slope between each item of the list. We then calculated the average of this list, and this average gave a pretty good numeric representation of the positivity of the graph.</p></li>
+				</ul>
+				<li><p>We originally didn't know how to make boxes to contain elements in HTML</p></li>
+				<ul>
+					<li><p>We figured out that we could use div tags to contain various other elements, and have backgrounds or separate properties for those elements.</p>
+				</ul>
+				<li><p>When setting up main.py, we were unable to import our trends.py file (which we had originally coded to calculate popularity of a searched topic). Thus, we ended up moving the function in the file (status('term')) to the main.py file. However, that was when we found out that it was the pytrends module we were unable to import</p></li>
+				<ul>
+					<li><p>At first, Gabriel Thompson created a web server on his machine to process status('term') instead and our code would just request the results from that. </p></li>
+					<li><p>Eventually, Kevin Wang helped us and we were able to import the pytrends module by moving the downloaded pytrends module to our final project folder instead of the local library.</p></li>
+				</ul>
+			</ul>
+			
+			<h3> UNRESOLVED ISSUES </h3>
+			<ul>
+				<li><p>We still aren't sure how to make an HTML form because we haven't gotten to that part of the assignment yet</p></li>
+				<li><p>We aren't sure how we could make our algorithm for analyzing the Google Trends data better. We have, however, found a tutorial that uses pandas to analyze data trends, which we might implement later: <a href="https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a">https://towardsdatascience.com/time-series-analysis-in-python-an-introduction-70d5a5b1d52a</a> </p></li>
+				<li><p>We have not yet finished the website, and the current website looks pretty plain and empty</p></li>
+			</ul>
+			
+			<h3> COOL STUFF LEARNED </h3>
+			<ul>
+				<li><p>We've learned how to retrieve Google Trends data in Python, using the pytrends module</p></li>
+				<li><p>We've learned how to measure whether a trend is general positive or negative using slopes (although this was not used in the final project)</p></li>
+				<li><p>We've learned about how to separate different parts of a webpage with div tags</p></li>
+				<li><p>We've learned about how to use hr tags to make dividers on HTML pages</p></li>
+				<li><p>We learned how to make a progress bar and change the various elements of the bar.</p></li>
+			</ul>
+			
+			<h3> MID-DEVELOPMENT DESIGN CHANGES </h3>
+			<ul>
+				<li><p>We initially planned on doing the project on the analysis of specialized high school acceptance data to determine the chance someone from a specific middle school would be accepted. This idea was replaced with the analysis of GoogleTrends data to find how relevant a topic is.</p></li>
+			</ul>
+			
+			<h3> LESSONS LEARNED </h3>
+			<ul>
+				<li><p>Make sure the name of the file you are working on is not the name of a module you may need.</p>
+				<li><p>If you need to download a module to make a certain function work but the code needs to be able to be run by everyone, move the downloaded module folder to the same folder as your work so it can be accessed.</p></li>
+				<li><p>Shadows are very picky. Here's a short summary of factors to consider: the color of your text, the color of your shadow (making all shadows black is both tacky and unrealistic), how offset your shadow is from your test, how blurred your shadow is, etc. The best way to make a good shadow is a dark -light combination : light text with dark shadow or the opposite. Never not offset the shadow and just blur because that leads to tackiness (unless you blur it very far and that's the effect you are looking for.) Also, color combinations with the rest of your page also matter. Some colors clash and having colors that are too close makes the page look off. The best way is just to mess around with the shadows a lot but these are the basic rules to consider.</p></li>
+			</ul>
+			
+			<h3> LOG </h3>
+			<p style="font-size: 13px;"> Note: Gabriel Thompson is driving for this project. </p><br>
+			<p>
+				fristL -- 2021-06-08 9:30 AM - 10:05 AM<br>
+				------------------------------------------
+			</p>
+			<ul>
+				<li><p>Running Through Data on NYC Open Data to decide Project Topic</p></li>
+				<ul>
+					<li><p>Current Topic:  Analyze the data of specialized high school admissions from previous years and, based on prior acceptances, predict the chance someone from a specific middle school has to get into a specialized high school.</p></li>
+				</ul>
+			</ul>
+			
+			<br><p>
+                                fristL -- 2021-06- 08 5:30 PM - 6:49 PM<br>
+                                ------------------------------------------
+                        </p>
+                        <ul>
+                                <li><p>Shooting More Ideas, decided to switch topics to a more coherent one</p></li>
+                                <ul>
+					<li><p>Current Topic: W/ Google Trends Data - Interpret Stuff about a Topic (how popular it is, what it says, etc.)</p></li>
+                                </ul>
+				<li><p>Trying to find ways to Download CSV Data from Google Trends</p></li>
+				<ul>
+					<li><p>Settled on pytrends module</p></li>
+					<ul>
+						<li><p>Using TrendReq, build_payload and interest_over_time to create csv list. </p></li>
+						<li><p>TrendReq connects to Google Trends data in a specific language</p></li>
+						<li><p>build_payload sets a time frame and region for the requested data (there are other fields, but they are not necessary for our code)</p></li>
+						<li><p>interest_over_time gets the actual data (we stored this in variable "data")</p></li>
+						<li><p>From there, use list(data[<topic>].array) to create a list of topic popularity</p></li>
+					</ul>
+				</ul>
+				<li><p>AUX Request for Permission in Rocket Chat</p></li>
+                        </ul>
+			
+			<br><p>
+                                fristL -- 2021-06-09 5:00 PM - 6:52 PM<br>
+                                ------------------------------------------
+                        </p>
+			<ul>
+				<li><p>Wrote Code for to find a number that could be used to determine Topic's Health.</p></li>
+				<ul>
+					<li><p>Currently it averages the differences between data points. The closer it is to 0 the more dead it is. The code is still up for change to consider some special cases. (Longtime popularity, etc.)</p></li>
+					<li><p>In previously written code, use a for loop to subtract one value from the previous one in the list and append to list "diff". Divide the sum of that list by the length.</p></li>
+				</ul>
+				<li><p>Set up html base website for the project</p></li>
+				<ul>
+					<li><p>Displays our project name, project description, team name, and team roster.</p></li>
+					<li><p>Started working on customizations such as the background and font.</p></li>
+				</ul>
+				<li><p>Discussed the format that the website will take as well as what will need to be implemented on the screen</p></li>
+				<li><p>Updated AUX permissions request</p></li>
+				<li><p>Found Development Log template. Redoing development log to fit the template.</p></li>
+				<li><p>Added a main.py file (it's just the py_web_html.py doc from qaf-drops)</p></li>
+			</ul>
+			
+			<br><p>
+                                firstL -- 2021-06-10 3:00 PM - 5:13 PM<br>
+                                ------------------------------------------
+                        </p>
+			<ul>
+				<li><p>Set up a search box on the main page.</p></li>
+				<li><p>Set up search button w/ magnifying glass icon</p></li>
+				<ul>
+					<li><p>Ran into a wall w/ fa fa-search. Looked around for alternatives</p></li>
+					<li><p>Fixed fa fa-search problem. Complete search bar and button that runs main.py w/ search term.</p></li>
+				</ul>
+				<li><p>Messed around w/ placement of search bar and button. They're perfectly aligned within the box now.</p></li>
+				<li><p>Fixing up main.py to show desired results (health status of searched topic)</p></li>
+				<ul>
+					<li><p>Ran into problem w/ importing pytrends module. (major time spent figuring out the problem since pytrends had been downloaded)</p></li>
+					<li><p>Gabriel set up a separate web server for now to run trends.py and have our code request the results</p></li>
+				</ul>
+				<li><p>Updated AUX Requests (again). Will most likely be sending other AUX requests in case other problems arise</p></li>
+			</ul>
+			
+                        <br><p>
+                                firstL -- 2021-06-10 6: 22 PM<br>
+                                ------------------------------------------
+                        </p>
+			<ul>
+				<li><p>Received advice from Kevin Wang on QAF Posts</p></li>
+				<ul>
+					<li><p>Moving entire downloaded pytrends module from local folder to fp folder to allow importing</p></li>
+					<li><p>Removing code in relation to requesting results from Gabriel's server. Reinstating trends.py.</p></li>
+				</ul>
+			</ul>
+			
+                        <br><p>
+                                firstL -- 2021-06-11 3: 00 PM - 5:30 PM<br>
+                                ------------------------------------------
+                        </p>
+			<ul>
+				<li><p>Made names on the main page link to our GitHub accounts.</p></li>
+				<li><p>Included 3 links at the bottom right of the main page that link to an "about" page, a "code" page, and a "sources" page. </p></li>
+				<li><p>Changed the border style for the home page.</p></li>
+				<li><p>Set up a results page (main.py) example to mess around w/ the elements that we will have on the site that shows search results</p></li>
+				<ul>
+					<li><p>Currently decide on a 3 column layout w/ left column showing popularity graph, middle column showing trend status and right column showing top 10 most popular topics.</p></li>
+					<li><p>Background will be a gradient from the bottom right. Colors for both the background and the 3 columns still undecided.</p></li>
+				</ul>
+				<li><p>Worked on incorporating the left column that displays the popularity graph of the topic.</p></li>
+				<li><p>Messing around with shadows and other customization options for the layout and looks of the results website.</p></li>
+			</ul>
+			
+			<br><p>
+                                firstL -- 2021-06-12 4: 00 PM - 6:10 PM<br>
+                                ------------------------------------------
+                        </p>
+			<ul>
+				<li><p>Included link to devlog on our website.</p></li>
+				<li><p>Added a "Back to home page" link on the results page. </p></li>
+				<li><p>Began to work on "universalizing" our code for results page by replacing instances of specific names and topics with variables that would be filled when given a searched topic.</p></li>
+				<li><p>Replaced pieces of the test file html from 06/11 so we could use {file name}.format on it.</p></li>
+				<ul>
+					<li><p>Instances of the topic name were replaced with {name}.</p></li>
+					<li><p>Health statement regarding the topic was named {health_desc}.</p></li>
+					<li><p>Health value that determines the Health bar was named {health}.</p></li>
+					<li><p>Current Trends table with the 10 trending topics was replaced with {popular[0]}, {popular[1]}, and so on until {popular[9]}.</p></li>
+				</ul>
+				<li><p>Fixed up the health bar to depict relatively accurate results.</p></li>
+				<li><p>Decided on the different Health statements that would be used to describe a topic's popularity. They were given different colors depending on the popularity they described.</p></li>
+				<ul>
+					<li><p>Better than ever!</p></li>
+					<li><p>Alive and well</p></li>
+					<li><p>Consistently healthy</p></li>
+					<li><p>Had a small accident, but not too bad</p></li>
+					<li><p>Hospitalized but possible recovery</p></li>
+					<li><p>Terminally ill</p></li>
+					<li><p>Six feet under</p></li>
+					<li><p>Not enough data!</p></li>
+				</ul>
+			</ul>
+		</div>
+	</center>
+	
+	<div id="bottom">
+		<p style="position: fixed; bottom: -1vw; right: 0.5vw;">
+			<a href="about.html" style="color: white;">about</a>
+			|
+			<a href="code.html" style="color: white;">code</a>
+			|
+			<a href="devlog.html" style="color: white;">devlog</a>
+			|
+			<a href="sources.html" style="color: white;">sources</a> 
+		</p>
+		<p style="position: fixed; bottom: -1vw; left: 0.5vw;">
+                        <a href="../" style="color: white;">home</a>
+                </p>
+	</div>
+</body>
+
+</html>
