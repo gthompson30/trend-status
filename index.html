@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5bf813fa9f.js" crossorigin="anonymous"></script>
+
+<style>
+
+h1, h2 {
+	text-align: center;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+body {
+	background-image: url('https://blog.motionisland.com/wp-content/uploads/2019/09/After-Effects-Arrow-23.gif');
+}
+
+#main {
+	width: 30vw;
+	border: 5px solid rgb(255, 0, 0, 0.8);
+	border-radius: 30px;
+	background-color: rgb(0, 0, 255, 0.6);
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+#search_box {
+}
+
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+button {
+	width: 34px;
+	height: 34px;
+	padding-top: 3px;
+}
+
+#credits {
+	width: 20vw;
+}
+
+#our_names {
+	padding-top: 20px;
+	font-size: 16px;
+}
+
+.gitlink {
+	color: white;
+}
+
+</style>
+
+</head>
+
+<body>
+	<br><br><br><br><br><br><br><br><br><br><br>
+	<center>
+		<div id="main">
+			<h1> TrendStatus </h1>
+			<div id="search_box">
+				<form name="search" method="GET" action="status.py">
+					<input type="text" name="search" placeholder="Search..."></input>
+					<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+			<br>
+			<hr></hr>
+			<div id="credits">
+				<h2 id="our_names"> by <a href="https://github.com/gthompson30" class="gitlink">Gabriel Thompson</a>, 
+						       <a href="https://github.com/Mags-012705" class="gitlink">Maggie Huang</a>, and 
+						       <a href="https://github.com/AnthonyChen0818" class="gitlink">Anthony Chen</h2>
+			</div>
+		</div>
+	</center>
+	
+	<div id="bottom">
+		<p style="font-family: 'Inconsolata', sans-serif; position: fixed; bottom: -1vw; right: 0.5vw; color: white;">
+			<a href="pages/about.html" style="color: white;">about</a>
+			|
+			<a href="pages/code.html" style="color: white;">code</a>
+			|
+			<a href="pages/devlog.html" style="color: white;">devlog</a>
+			|
+			<a href="pages/sources.html" style="color: white;">sources</a> 
+		</p>
+		<p style="font-family: 'Inconsolata', sans-serif;position: fixed; bottom: -1vw; left: 0.5vw;">
+			<a href="http://moe.stuy.edu/~gthompson30/fp/" style="color: white;">home</a>
+		</p>
+	</div>
+</body>
+
+</html>
