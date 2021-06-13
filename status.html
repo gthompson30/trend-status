@@ -18,25 +18,55 @@
 	<div class="main">
 		<div class="column" style="width: 8vw;"></div>
 
-		<div class="column" id="graph" style="background-color: lightblue; width: 23vw;">
+		<div class="column" id="graph" style="background-color: rgb(154, 217, 223); width: 23vw;">
 			<center>
-				<p> <b> Historical Popularity of {name} </b> </p>
+				<p> <b> Health Statement Key </b> </p>
 				<hr style="border: 2px solid rgb(120, 120, 255);">
-				<br>
-				<a href="figure.png">
-					<img src="figure.png" style="width: 20vw;"></img>
-				</a>
+				<table width="100%">
+					<tbody><tr>
+						<th width="45%"> <p> Description </p> </th>
+						<th width="5%"> <p> Popularity Range </p> </th>
+					</tr>
+					<tr class="ranges">
+						<td style="color: rgb(33, 190, 83);"> <p> Better than ever </p> </td>
+						<td class="numbers"> <p> 100% (only) </p> </td>
+					</tr>
+					<tr class="ranges">
+						<td style="color: rgb(33, 190, 83);"> <p> Alive and well! </p> </td>
+						<td class="numbers"> <p> 75% - 99% </p> </td>
+					</tr>
+                                        <tr class="ranges">
+                                                <td style="color: rgb(134, 179, 95)"> <p> Consistently Healthy </p> </td>
+                                                <td class="numbers"> <p> 30% - 74% </p> </td>
+                                        </tr>
+                                        <tr class="ranges">
+                                                <td style="color: rgb(221, 218, 121)"> <p> Had a small accident, but not too bad </p> </td>
+                                                <td class="numbers"> <p> 15% - 29% </p> </td>
+                                        </tr>
+                                        <tr class="ranges">
+                                                <td style="color: rgb(214, 155, 17)"> <p> Hospitalized, but possible recovery </p> </td>
+                                                <td class="numbers"> <p> 5% - 14% </p> </td>
+                                        </tr>
+					<tr class="ranges">
+                                                <td style="color: rgb(224, 90, 45)"> <p> Terminally ill </p> </td>
+                                                <td class="numbers"> <p> 2% - 4% </p> </td>
+                                        </tr>
+                                        <tr class="ranges">
+                                                <td style="color: rgb(169, 169, 169)"> <p> Six feet under </p> </td>
+                                                <td class="numbers"> <p> 0% - 1% </p> </td>
+                                        </tr>
+				</tbody></table>
 			</center>
 		</div>
 	
 		<div class="column" style="width: 2vw;"></div>
 	
-		<div class="column" id="status" style="background-color: rgb(134, 197, 203); width: 34vw;">
+		<div class="column" id="status" style="background-color: lightblue; width: 34vw;">
 			<center>
 				<br><br>
 				<h2> Status of {name} </h2>
 				<hr style="border: 2px solid rgb(120, 120, 255);">
-				<h1 id="status_description" style="color: {color};"> <b> {health_desc} </b> </h1>
+				<h1 id="status_description" style="color: {color}; text-shadow : 1px 2px 1.5px {text_shadow};"> <b> {health_desc} </b> </h1>
 				<br><br>
 
 				<h3 id="health_title"> Health of {name}: </h3>
@@ -55,10 +85,10 @@
 		
 		<div class="column" style="width: 2vw;"></div>
 		
-		<div class="column" id="most_popular" style="background-color: lightblue; width: 23vw">
+		<div class="column" id="most_popular" style="background-color: rgb(134, 197, 203); width: 23vw">
 			<table width="100%">
 				<tr>
-					<th colspan="2">
+					<th colspan="2" style="border-bottom: 5px solid rgb(120, 120, 255);">
 						<p style="font-size: 18px;"> <b> Current Trends </b> </p>
 					</th>
 				</tr>
@@ -131,15 +161,18 @@
 	</div>
 
 	<div id="bottom">
-                <p style="position: absolute; bottom: -1vw; right: 0vw;">
-                        <a href="pages/about.html" style="color: black;">about</a>
+                <p style="position: fixed; bottom: -1vw; right: 0vw; color: white;">
+                        <a href="pages/about.html" style="color: white;">about</a>
 			|
-                        <a href="pages/code.html" style="color: black;">code</a>
+                        <a href="pages/code.html" style="color: white;">code</a>
 			|
-                        <a href="pages/devlog.html" style="color: black;">devlog</a>
+                        <a href="pages/devlog.html" style="color: white;">devlog</a>
 			|
-                        <a href="pages/sources.html" style="color: black;">sources</a>
+                        <a href="pages/sources.html" style="color: white;">sources</a>
                 </p>
+		<p style="position: fixed; bottom: -1vw; left: 0.5vw;">
+			<a href="index.html" style="color: white;">home</a>
+		</p>
         </div>
 
 </body>
