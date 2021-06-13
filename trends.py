@@ -1,4 +1,6 @@
 from pytrends.request import TrendReq
+from datetime import datetime
+from requests import get
 
 def status(term):
 	pytrend = TrendReq(hl='en-US', tz=360)
@@ -24,6 +26,15 @@ def status(term):
 	fig.savefig('figure.png')
 	'''
 	return last_point / 100
+
+
+def charts():
+	today = datetime.today()
+	date = int(today.strftime("%Y%m"))
+	
+	pytrend = TrendReq(hl='en-US', tz=300, geo='GLOBAL')
+	chart_data = pytrend.trending_searches(pn='united_states')
+	return chart_data
 
 '''
 print('Tiktok:')
