@@ -55,31 +55,41 @@ top_trends = ['a trend', 'a trend two', 'another trend', 'a fourth trend', 'this
 if health == 1:
 	health_desc = 'Better than ever!'
 	color = 'rgb(33, 190, 83)'
+	text_shadow = 'rgb(0, 101, 39)'
 elif health >= 0.75:
 	health_desc = 'Alive and well'
 	color = 'rgb(33, 190, 83)'
+	text_shadow = 'rgb(0, 101, 39)'
 elif health >= 0.30:
 	health_desc = 'Consistently healthy'
 	color = 'rgb(154, 199, 115)'
+	text_shadow = 'rgb(69, 144, 37)'
 elif health >= 0.15:
 	health_desc = 'Had a small accident, but not too bad'
 	color = 'rgb(201, 198, 101)'
+	text_shadow = 'rgb(157, 119, 35)'
 elif health >= 0.05:
 	health_desc = 'Hospitalized, but possible recovery'
 	color = 'rgb(214, 155, 17)'
+	text_shadow = 'rgb(164, 65, 1)'
 elif health >= 0.02:
 	health_desc = 'Terminally ill'
 	color = 'rgb(224, 90, 45)'
+	text_shadow = 'rgb(103, 1, 4)'
 elif health == -1:
 	health_desc = 'Not enough data'
 	color = 'rgb(169, 169, 169)'
 	health = 0
+	text_shadow = 'rgb(39, 37, 104)'
 else:
 	health_desc = 'Six feet under'
 	color = 'rgb(128, 128, 128)'
+	text_shadow = 'rgb(10, 10, 60)'
+
+top_charts = trends.charts()[0][:10]
 
 content = str(open('status.html', 'r').read())
-content = content.format(name=term, health=round(health * 100, 1), popular=top_trends, health_desc=health_desc, color=color)
+content = content.format(name=term, health=round(health * 100, 1), popular=top_charts, health_desc=health_desc, color=color, text_shadow=text_shadow)
 
 #assemble html string
 html_entire_page =  html_header
